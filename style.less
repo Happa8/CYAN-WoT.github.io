@@ -1,13 +1,27 @@
-
+.text-slim-jp{
+    font-family: 'Noto Sans Japanese', sans-serif;
+    font-weight: 300;
+}
 
 .jumbotron{
-    background-image: url(imgs/top.jpg);
+    background-image: url( imgs/header2.jpg);
     
     background-size: cover;
+    background-position: center center;
+    
+    
 }
 
 .text-shadow(@textshadow: hsla(0, 0%, 22%, 0.5)){ 
     text-shadow: @textshadow 1px 1px 0px, @textshadow -1px 1px 0px, @textshadow 1px -1px 0px, @textshadow -1px -1px 0px;
+}
+
+body{
+    .text-slim-jp;
+}
+
+.blur-5{
+    filter: blur(5px);
 }
 
 .jum-top-h1{
@@ -20,6 +34,18 @@
     .text-shadow;
 }
 
+.text-slim{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    
+}
+
+
+
+.text-letter-spacing{
+    letter-spacing: 2px;
+}
+
 .heading{
     border-bottom: 2px solid #29949a;
     font-size: 40px;
@@ -27,6 +53,18 @@
 
 .motto{
     font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-topbottom-center{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.img-clanhis{
+    width: 80%;
+    margin: 0 auto;
 }
 
 .img-responsive{
@@ -46,6 +84,10 @@
 
 .btn-joinclan{
     margin: auto;
+}
+
+.li-style-num{
+    list-style-type: decimal;
 }
 
 .footer{
